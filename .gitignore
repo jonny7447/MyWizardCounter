@@ -1,0 +1,39 @@
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Android Studio / IntelliJ
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+*.iml
+
+# Lokale Android-Konfiguration
+local.properties
+
+# Native Builds
+.externalNativeBuild/
+.cxx/
+
+# Android-Ausgaben
+captures/
+*.apk
+*.aab
+
+# Signaturschlüssel und Geheimnisse
+*.jks
+*.keystore
+secrets.properties
+
+# Lokale Umgebungsvariablen
+.env
+.env.*
+
+# Betriebssystem
+.DS_Store
+Thumbs.db

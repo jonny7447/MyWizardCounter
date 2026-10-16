@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Activites.GetNamesActivity">
+
+    <EditText
+        android:id="@+id/name1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zauberlehrling 1"
+        app:layout_constraintBottom_toBottomOf="@id/preview_selected_color_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/preview_selected_color_1"/>
+
+    <View
+        android:id="@+id/preview_selected_color_1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:onClick="onColorViewClick"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/name2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zauberlehrling 2"
+        app:layout_constraintBottom_toBottomOf="@id/preview_selected_color_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/preview_selected_color_2"/>
+
+    <View
+        android:id="@+id/preview_selected_color_2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:onClick="onColorViewClick"
+        app:layout_constraintTop_toBottomOf="@id/preview_selected_color_1"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/name3EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zauberlehrling 3"
+        app:layout_constraintBottom_toBottomOf="@id/preview_selected_color_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/preview_selected_color_3"/>
+
+    <View
+        android:id="@+id/preview_selected_color_3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:onClick="onColorViewClick"
+        app:layout_constraintTop_toBottomOf="@id/preview_selected_color_2"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/name4EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zauberlehrling 4"
+        app:layout_constraintBottom_toBottomOf="@id/preview_selected_color_4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/preview_selected_color_4"/>
+
+    <View
+        android:id="@+id/preview_selected_color_4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:onClick="onColorViewClick"
+        app:layout_constraintTop_toBottomOf="@id/preview_selected_color_3"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/name5EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zauberlehrling 5"
+        app:layout_constraintBottom_toBottomOf="@id/preview_selected_color_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/preview_selected_color_5"/>
+
+    <View
+        android:id="@+id/preview_selected_color_5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:onClick="onColorViewClick"
+        app:layout_constraintTop_toBottomOf="@id/preview_selected_color_4"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/name6EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zauberlehrling 6"
+        app:layout_constraintBottom_toBottomOf="@id/preview_selected_color_6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/preview_selected_color_6"/>
+
+    <View
+        android:id="@+id/preview_selected_color_6"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:onClick="onColorViewClick"
+        app:layout_constraintTop_toBottomOf="@id/preview_selected_color_5"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weiter"
+        android:onClick="onWeiterButtonClicked"
+        app:layout_constraintTop_toBottomOf="@id/preview_selected_color_6"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/showStatisticsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics"
+        android:onClick="onStatisticButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
